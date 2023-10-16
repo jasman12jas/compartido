@@ -1,0 +1,33 @@
+
+footer{
+    /* alineacion y color del footer */
+   background-color: black;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   align-items: center;
+   max-height: 70px;
+   padding: 10px;
+   bottom: 0;
+   position: static;
+   width: 100%;
+  
+}   
+
+footer .texfoo{
+    /* formato del texto */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+footer a{
+    /* formato enlace */
+    color: white;
+    text-transform: capitalize;
+}
+
+footer a:hover{
+    /* color del hover */
+    color: rgb(255, 136, 45);
+}

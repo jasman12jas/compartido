@@ -1,0 +1,72 @@
+* {
+  /* ajustamos el masimo a todo */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2, 7em;
+}
+p {
+  font-size: 1.25em;
+}
+
+
+
+.alineado{
+    /* para en caso de estirar la pantalla se aplique esto  */
+    margin: auto;/* margen automatico */
+    max-width: 1400px;  /* en cuanto llega a estos pixeles de pantalla  */
+  }
+
+  
+  #quiensom .alineado{
+    /* clase del alineado */
+    display: flex;
+    padding: 200px 12px;
+    height: 100vh;
+    /* alineamos para que todo este centrado */
+    align-items: center;
+    justify-content: center;
+
+  } 
+
+#quiensom .textoqs{
+  /* clase del texto */
+  padding: 0px 30px;
+  max-width: 500px; /* esto hace cuando se alarge no se distorsione mas de lo normal */
+  min-width: 500px; /* con esto hacemos que la imagen cuando se encoge desaparezca y no distorsione el txt */
+  width: 50%;
+  text-align: initial;
+  text-align: center;
+
+}
+
+
+#quiensom .imgsecsom{
+    /* modificamos la imagen de la sigiente seccion */
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.2),
+        rgb(0,0,0,0.2)
+        )
+    , url(./imagenes/quienes-somos.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 800px;
+    max-width: 500px;
+  }
+
+
+  #quiensom h2{
+    /* formato del h2 */
+    text-transform: uppercase;
+  }

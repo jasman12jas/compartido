@@ -1,0 +1,112 @@
+
+*{
+/* esto es para aplicar a todo  */
+    box-sizing: border-box; /* en caso de pasarnos poniendo un pading o margin no lo corrige al tamaño maximo elegido */
+}
+
+/* solo comentare lo nuevo si hay algo sin comentar es por que ya explique que hace en otro comentario */
+
+body {
+    margin: 0;  /* para quitar los margenes del body y que no se qude la niena fea arriba  */
+    font-family: 'Roboto',sans-serif; /* estylo de letra que me ayuda a leer mucho */
+  }
+
+  h1{font-size: 3.5em;}
+  h2{font-size: 2,7em;}
+  p{ font-size: 1.25em;}
+
+
+  button{
+    /* botones para las categorias*/
+
+    font-size: 1.5 em; /* tamaño letra del boton */
+    font-weight: bold; /* negrita en la letra */
+    padding: 10px 20px; /* tamaño del boton  */
+    text-transform: uppercase;  /* letras en mayus */
+    border-radius: 10px; /* radio del borde */
+    border: 1px solid rgba(0, 0, 0, 0.5); /* datos del borde  */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.413); /* sombra del borde datos : x , y , expansion sombre y color */
+    color: white; /* color letra  */
+    background-color: rgb(255, 90, 30); /* color del fondo  */
+  }
+
+  button:hover{
+    background-color:  rgb(177, 64, 23); /* color del fondo del hover */
+  }
+  
+  .alineado{
+    /* para en caso de estirar la pantalla se aplique esto  */
+    margin: auto;/* margen automatico */
+    max-width: 1400px;  /* en cuanto llega a estos pixeles de pantalla  */
+  }
+
+  #hero{
+    /* esto es como la imagen que se pone en el inicio que ultimamente esta muy de moda se le suele llamar hero */
+    display: flex; /* lo ponemos en modo fila */
+    flex-direction: column; /* cambiamos la direccion de la fila a columna */
+    align-items: center;/* aliniamos el contenido del hero */
+    justify-content:center;/* justyficamos el contenido a centrado  */
+    background-image: linear-gradient(/* esto sirve para cuando tienes un fondo de pantalla donde hay elementos que chocan con el color del txto meter un degradado y solucionarlo esto lo encontre buscando soluciones ya que en mi fondo hay muchos colores y no me gustaba ninguno de letra asi que busque en internet y encontre esta solucion */
+        0deg, /* direccion del degradado al ponerse en 0 que es todo igual  */
+        rgb(0,0,0,0.5),/*color del degradado 1  */
+        rgb(0,0,0,0.5)/*color del degradado 2  */
+        )
+    ,url(./imagenes/libre-section1.jpg);/* imagen de fondo */
+    height: 100vh; /* esto es para poner el tamaño y vh lo he elegido por que significa el 90% de la pantalla assique cambiara segun el dispositivco es como el em si pones 90% solo sera el 90% de la pagina no de la pantalla lo que busco con esto es que tu basica mente veas el heades y el hero que es lo mas llamativo  */
+    background-repeat: repeat;/* para que el fondo no se repita */
+    background-size: cover;/* para qe ocupe la imagen todo el espacio */
+    background-position: center center;/* para que me centre la imagen tanto  vertical como horizontal */
+    /* con esto solo se alinearia si la pantalla fuese grande pero como edito con pantalla pequeña le pongo una cosas mas  */
+    text-align: center; /* aliniamos solo el texto */
+  }
+
+  #hero h1{
+    color: white;/* color de la letra */
+  }
+
+   #quiensom .alineado{
+    /* clase del alineado */
+    display: flex;
+    padding: 200px 12px;
+    align-items: center;
+    justify-content: center;
+    
+
+  } 
+  #quiensom .textoqs{
+    /* clase del texto */
+    padding: 0px 30px;
+    max-width: 500px; /* esto hace cuando se alarge no se distorsione mas de lo normal */
+    min-width: 500px; /* con esto hacemos que la imagen cuando se encoge desaparezca y no distorsione el txt */
+    width: 50%;
+    text-align: initial;
+
+  }
+
+
+  #quiensom .imgsecsom{
+    /* modificamos la imagen de la sigiente seccion */
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+        )
+    , url(./imagenes/couch-1868755_640.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 300px;
+    
+
+  }
+
+  #quiensom a:hover{
+    /* hover del enlace de que hacemos */
+    color: coral;
+  }
+
+  #quiensom h2{
+    /* formato del h2 */
+    text-transform: uppercase;
+
+  }

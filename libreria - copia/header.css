@@ -1,0 +1,46 @@
+
+  header {
+    /* cabecera donde se encuentra el nav y el fondo */
+    display: flex; /*  para poner el contenido de forma horizontal  */
+    min-height: 70px; /* tamaño minimo para en caso de poner las letras mas grande que se alarge el header */
+    background-color: rgb(249, 141, 53);
+    justify-content: space-between; /* para dejar un espacio entre el contenido en este caso el espacio es entre el div y el header */
+    padding: 10px;
+    align-items: center; /* poner el contenido centrado de arriba y abajo */
+    position: fixed;
+    width: 100%;
+  }
+
+  .ico {
+    /* esto es una clase que añadi al div donde se añade el icono y titulo */
+    display: flex; /*  para poner el contenido de forma horizontal fila  */
+    align-items: center; /* poner el contenido centrado de arriba y abajo */
+    font-weight: bold;/* negrita en la letra */
+    text-transform: capitalize;  /* letras en mayus la primera de cada palabra */
+    
+  }
+
+  .ico img {
+    /* formato del icono  */
+    height: 50px;
+    margin-right: 1em;
+  }
+
+  a {
+    /* formato de los enlaces */
+    text-decoration: none; /* quitar decoracion a los enlaces */
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+  }
+
+  #cabesa a{
+    /* formato de los navegadores */
+    font-weight: 600;/* cambia como el grosor del txto haciendo que parezcas negrita */
+    padding-right: 10px;
+    text-transform: capitalize;
+  }
+
+  nav a:hover {
+    /* un hover para cambiar el color cuando pasas por un enlace */
+    color: white;
+  }
